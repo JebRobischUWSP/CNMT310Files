@@ -9,7 +9,7 @@ if (!isset($_SESSION['loginSuccess']) || !($_SESSION['loginSuccess'] === true)) 
 
 printSimpleHead("Your Account");
 print "<p>You made it to your account page! :D<br>
-	...or, well, the account page shared between all users.<br>";
+	...or, well, the account page shared between all users.<br><br>";
 print "<a href=".PG_LOGOUT."><button>Logout</button></a>";
 printSimpleEnd();
 ?>
