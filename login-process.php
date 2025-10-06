@@ -26,8 +26,8 @@ if (count($error) > 0) {
 	die();
 	*/
 	$_SESSION['logErr'] = $error[0]; //The login flow I use only ever spits out one error at a time
-	die(header("Location: https://cnmtsrv2.uwsp.edu/~jrobi774/"));
+	die(header("Location: ".PG_INDEX));
 }
 //Login has passed, succeed & go to account
 $_SESSION['loginSuccess'] = true;
-die(header("Location: https://cnmtsrv2.uwsp.edu/~jrobi774/account.php"));
+die(header("Location: ".PG_ACCOUNTHOME));

@@ -4,7 +4,7 @@ require_once("commonLib.php");
 
 //Auto-redirect
 if (isset($_SESSION['loginSuccess']) && $_SESSION['loginSuccess']) {
-	die(header("Location: https://cnmtsrv2.uwsp.edu/~jrobi774/account.php"));
+	die(header("Location: ".PG_ACCOUNTHOME));
 }
 
 //Load actual page content
