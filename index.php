@@ -14,13 +14,13 @@ $docContent = [
 	["<h1> HELLO WORLD!!!1! </h1>\n",
 	"<p>Hey ".$name.", today is ".date("j-n-Y")."</p>\n"],
 	["<form action='login-process.php' method='POST'>\n",
-	"User: <input type='text' name='username'><br>\n",
-	"Pass: <input type='password' name='password'><br>\n",
-	"<input type='submit' name='send_auth'>\n",
+	"<span class='form_label'>User: </span><input type='text' name='username'><br>\n",
+	"<span class='form_label'>Pass: </span><input type='password' name='password'><br>\n",
+	"<input class='form_submit' type='submit' name='send_auth'>\n",
 	"</form>\n"]
 ];
 
-printSimpleHead($title);
+printSimpleHead($title, ["basic_style.css"]);
 printLines($docContent[0]);
 if (isset($_SESSION['logErr'])) {
 	print "<p>" . $_SESSION['logErr'] . "</p>\n";

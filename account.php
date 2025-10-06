@@ -7,7 +7,7 @@ if (!isset($_SESSION['loginSuccess']) || !($_SESSION['loginSuccess'] === true)) 
 	die(header("Location: ".PG_INDEX));
 }
 
-printSimpleHead("Your Account");
+printSimpleHead("Your Account", ["basic_style.css"]);
 print "<p>You made it to your account page! :D<br>
 	...or, well, the account page shared between all users.<br><br>";
 print "<a href=".PG_LOGOUT."><button>Logout</button></a>";

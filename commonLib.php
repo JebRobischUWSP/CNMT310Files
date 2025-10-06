@@ -17,12 +17,17 @@ function printLines($content) {
  * 
  * @param string $title page title
  */
-function printSimpleHead($title="Title Unset") {
+function printSimpleHead($title="Title Unset",$styles=[]) {
 	print "<!doctype html>\n".
 	"<html lang=\"en\">\n".
 	"<head>\n".
-	"<title>".$title."</title>\n".
-	"</head>\n".
+	"<title>".$title."</title>\n";
+	if (count($styles) > 0) {
+		foreach ($styles as $sheet) {
+			print "<link rel='stylesheet' href='".$sheet."'>";
+		}
+	}
+	print "</head>\n".
 	"<body>\n";
 }
 /**

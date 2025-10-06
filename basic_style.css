@@ -1,0 +1,17 @@
+* {
+	font-family: Helvetica, sans-serif;
+	color: #004;
+}
+form {
+	border: 1px solid #CCC;
+	background-color: #EEE;
+}
+.form_submit {
+	margin:10px 0 5px 10px;
+	font-size:1.2em;
+}
+.form_label {
+	display: inline-block;
+	width: 100px;
+	padding: 10px 0 0 10px;
+}
