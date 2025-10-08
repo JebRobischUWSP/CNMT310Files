@@ -7,7 +7,7 @@ if (!isset($_SESSION['loginSuccess']) || !($_SESSION['loginSuccess'] === true)) 
 	die(header("Location: ".PG_INDEX));
 }
 
-printSimpleHead("Your Account", "Account Settings & Management", ["basic_style.css"], [[PG_LOGOUT, "Logout"]]);
-print "<p>Welcome to the account page! Sadly, the only thing you can do is logout.</p>";
+printSimpleHead("Customer Portal", "Customer Portal", ["basic_style.css"], [[PG_LOGOUT, "Logout"],[PG_ACCOUNTMGMT, "Account"]]);
+print "<h1>Welcome to the Customer Portal!</h1>";
 printSimpleEnd();
 ?>

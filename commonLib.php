@@ -17,18 +17,28 @@ function printLines($content) {
  * 
  * @param string $title page title
  */
-function printSimpleHead($title="Title Unset",$styles=[]) {
+function printSimpleHead($title="Title Unset",$pageheader="Placeholder!",$styles=[],$buttons=[]) {
 	print "<!doctype html>\n".
 	"<html lang=\"en\">\n".
 	"<head>\n".
 	"<title>".$title."</title>\n";
 	if (count($styles) > 0) {
 		foreach ($styles as $sheet) {
-			print "<link rel='stylesheet' href='".$sheet."'>";
+			print "<link rel='stylesheet' href='".$sheet."'>\n";
 		}
 	}
-	print "</head>\n".
-	"<body>\n";
+	print "<script src='commonJS.js'></script>\n".
+	"</head>\n".
+	"<body>\n".
+	"<div id='titlebar'>\n".
+	"\t<h2>".$pageheader."</h2>\n";
+	if (count($buttons) > 0) { //Note: buttons shjould be arrays of [0] link, [1] display text
+		foreach ($buttons as $button) {
+			print "<a class='titlebutton' href='".$button[0]."'><span>".$button[1]."</span></a>\n";
+		}
+	}
+	print"</div>\n".
+	"<div id='titlebarPad'></div>\n";
 }
 /**
  * Prints the end of a simple HTML page

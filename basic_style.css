@@ -15,3 +15,41 @@ form {
 	width: 100px;
 	padding: 10px 0 0 10px;
 }
+.titlebutton {
+	display:inline-block;
+	position:relative;
+	top:-68px;
+	float:right;
+	width:120px;
+	height:100%;
+	margin:0;
+	border-left:solid 1px #115;
+	background: #cecef2;
+	background: linear-gradient(180deg,rgba(206, 206, 242, 1) 0%, rgba(186, 186, 222, 1) 87%, rgba(133, 133, 171, 1) 96%, rgba(0, 0, 68, 1) 100%);
+}
+.titlebutton:hover {
+	background: #ebebf5;
+	background: linear-gradient(180deg,rgba(235, 235, 245, 1) 0%, rgba(186, 186, 222, 1) 87%, rgba(133, 133, 171, 1) 96%, rgba(0, 0, 68, 1) 100%);
+}
+.titlebutton span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight:bold;
+}
+#titlebar {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 60px;
+	background: #ebebff;
+	background: linear-gradient(180deg,rgba(235, 235, 255, 1) 0%, rgba(216, 216, 235, 1) 87%, rgba(145, 145, 168, 1) 96%, rgba(0, 0, 68, 1) 100%);
+}
+#titlebar h2 {
+	padding-left:20px;
+}
+#titlebarPad {
+	height:80px;
+}

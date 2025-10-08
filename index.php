@@ -20,7 +20,7 @@ $docContent = [
 	"</form>\n"]
 ];
 
-printSimpleHead($title, ["basic_style.css"]);
+printSimpleHead($title, "Jeb's Cool Site", ["basic_style.css"]);
 printLines($docContent[0]);
 if (isset($_SESSION['logErr'])) {
 	print "<p>" . $_SESSION['logErr'] . "</p>\n";

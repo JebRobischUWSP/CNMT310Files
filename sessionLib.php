@@ -2,7 +2,8 @@
 session_start();
 
 define("PG_INDEX","index.php");
-define("PG_ACCOUNTHOME","account.php");
+define("PG_ACCOUNTHOME","customer.php");
+define("PG_ACCOUNTMGMT","account.php");
 define("PG_LOGIN","login.php");
 define("PG_LOGOUT","logout.php");
 
